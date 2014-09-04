@@ -26,6 +26,6 @@
  <gap:platform name="ios" />
 <gap:platform name="android" />
 
-<preference name="orientation" value="landscape" />
+
  
 </widget>
