@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <widget xmlns       = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
-        id          = "org.coenraets.employeedirectory"
+        id          = "com.likermob.app"
         versionCode = "10"
         version     = "1.1.0">
  
-    <name>Employee List Directory - Working?</name>
+    <name>Likermob</name>
  
     <description>
-        A complex employee directory application
+       Save on things you like!
     </description>
  
-    <author href="http://coenraets.org" email="test@seyyalater.com">
-       Jarrod Dean
+    <author href="http://www.likermob.com" email="jadman02@hotmail.com">
+        Jarrod Dean
     </author>
  
-    <feature name="http://api.phonegap.com/1.0/camera"/>
-    <feature name="http://api.phonegap.com/1.0/contacts"/>
-    <feature name="http://api.phonegap.com/1.0/file"/>
+<access origin="http://smilesavers.net.au"/>
+ 
+ 
+
     <feature name="http://api.phonegap.com/1.0/geolocation"/>
-    <feature name="http://api.phonegap.com/1.0/media"/>
     <feature name="http://api.phonegap.com/1.0/network"/>
     <feature name="http://api.phonegap.com/1.0/notification"/>
  
  <gap:platform name="ios" />
-<gap:platform name="android" />
-
-<preference name="orientation" value="portrait" />
+ <preference name="orientation" value="portrait" />
+ 
+ <preference name="DisallowOverscroll" value="true" />
  
 </widget>
