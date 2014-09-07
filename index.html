@@ -1,174 +1,27 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        <!-- Required meta tags-->
-    <meta charset="utf-8">
-    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <!-- Your app title -->
-    <title>Likermob</title>
-    <!-- Path to Framework7 Library CSS-->
+        <title>Employee Directory</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1, target-densityDpi=device-dpi"/>
+            <!-- Path to Framework7 Library CSS-->
     <link rel="stylesheet" href="css/framework7.css">
-    <!-- Path to your custom app styles-->
-    <link rel="stylesheet" href="css/my-app.css">
+        <link rel="stylesheet" href="css/styles.css" />
     </head>
 
     <body>
-     
-        <!-- Status bar overlay for full screen mode (PhoneGap) -->
-    <div class="statusbar-overlay"></div>
-    
-    <!-- Panels Overlay -->
-  <div class="panel-overlay"></div>
- 
-  <!-- Left Panel with Reveal effect -->
-  <div class="panel panel-left panel-reveal">
-    
-    <div class="list-block" style="margin-top: 0px;">
-      <ul>
-        <li class="item-content">
-          <div class="item-media"><i class="icon icon-bars"></i></div>
-          <div class="item-inner">
-            <div class="item-title">Find Deals</div>
-            <div class="item-after">Nearby</div>
-          </div>
-        </li>
-        <li class="item-content">
-          <div class="item-media"><i class="icon icon-bars"></i></div>
-          <div class="item-inner">
-            <div class="item-title">My Deals</div>
-            <div class="item-after"><span class="badge">5</span></div>
-          </div>
-        </li>
-        <a href="#" class="item-link open-popup" data-popup=".popup-search">
-        <li class="item-content">
-          <div class="item-media"><i class="icon icon-bars"></i></div>
-          <div class="item-inner">
-            <div class="item-title">Search</div>
-            
-          </div>
-        </li>
-        </a>
-        <li class="item-content">
-          <div class="item-media"><i class="icon icon-bars"></i></div>
-          <div class="item-inner">
-            <div class="item-title">Share</div>
-            
-          </div>
-        </li>
-        <li class="item-content">
-          <div class="item-media"><i class="icon icon-bars"></i></div>
-          <div class="item-inner">
-            <div class="item-title">Invite</div>
-            
-          </div>
-        </li>
-      </ul>
-      <div class="list-block-label">List block label text goes here</div>
-    </div>
-    
-    <div class="content-block">
-
-
-
-
-
-    </div>
-  </div>
-    
-    <!-- Views -->
-    <div class="views">
-      <!-- Your main view, should have "view-main" class -->
-      <div class="view view-main">
-        <!-- Top Navbar-->
-        <div class="navbar">
-          <div class="navbar-inner">
-            <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
-           <div class="left">
-            <a href="#" class="link open-panel" icon-only>
-                <i class="icon icon-menu"></i>
-                
-            </a>
-        </div>
-        <div class="center"><img src="img/likermobhorizontal.png" width="132.5" height="33.5" alt="title"></div>
-        <div class="right">
-            <a href="#" class="link open-popup" data-popup=".popup-search">
-                
-                <i class="icon icon-search"></i>
-            </a>
-
-  
-        </div>
-          </div>
-        </div>
-        <!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
-        <div class="pages navbar-through toolbar-through">
-          <!-- Page, "data-page" contains page name -->
-          <div data-page="index" class="page">
-            <!-- Scrollable page content -->
-            <div class="page-content" id="result">
-
-
-<ul>
-  <li>Coffee</li>
-  <li>Tea</li>
-  <li>Milk</li>
-</ul>
-
-	<div id="wrapper">
+        
+	<div class="content-block-title">Full Layout</div>
+  <div class="list-block">
 		<ul id="employeeList" class="icon-list"></ul>
-	</div>
 
+  </div>
+  </div>
+  
 	<div id="busy"/>Loading...</div>
 
-            </div>
-          </div>
-        </div>
-        <!-- Bottom Toolbar-->
-        <div class="toolbar">
-          <div class="toolbar-inner">
-            <!-- Toolbar links -->
-            <a href="#" class="link">Link 1</a>
-            <a href="#" class="link">Link 2</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    
-    <!-- Search Popup -->
-  <div class="popup popup-search">
-    <div class="navbar">
-    <div class="navbar-inner">
-        <div class="left">
-        
-        <a href="#" class="link close-popup" icon-only>
-                <i class="icon icon-bars"></i>
-                
-            </a>
-        
-        </div>
-        <div class="center">Search</div>
-        <div class="right"></div>
-    </div>
-</div>
-    <div class="content-block">
-      <p>Search</p>
-      <p>Lorem ipsum dolor ...</p>
-    </div>
-  </div>
-        
-
-	
-
-
     <script src="js/jquery.js"></script>
-
-    <script type="text/javascript" src="js/framework7.min.js"></script>
-
-    <!-- Path to your app js-->
-    <script type="text/javascript" src="js/my-app.js"></script>
+    <script src="js/iscroll.js"></script>
+    <script src="js/employeelist.js"></script>
 
     </body>
 

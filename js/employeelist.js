@@ -20,11 +20,11 @@ function getEmployeeList() {
 		$('#employeeList li').remove();
 		employees = data.items;
 		$.each(employees, function(index, employee) {
-			$('#employeeList').append('<li><a href="employeedetails.html?id=' + employee.id + '">' +
-					'<img src="pics/' + employee.picture + '" class="list-icon"/>' +
-					'<p class="line1">' + employee.firstName + ' ' + employee.lastName + '</p>' +
-					'<p class="line2">' + employee.title + '</p>' +
-					'<span class="bubble">' + employee.reportCount + '</span></a></li>');
+			$('#employeeList').append('<li class="item-content"><a href="employeedetails.html?id=' + employee.id + '">' +
+					'<div class="item-media"><img src="pics/' + employee.picture + '" class="list-icon"/></div>' +
+					'<div class="item-inner"><div class="item-title"><p class="line1">' + employee.firstName + ' ' + employee.lastName + '</p></div>' +
+					'<div class="item-after"><p class="line2">' + employee.title + '</p></div>' +
+					'</a></li></div>');
 		});
 		setTimeout(function(){
 			scroll.refresh();
