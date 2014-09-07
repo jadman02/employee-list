@@ -14,11 +14,22 @@ myApp.onPageInit('index', function (page) {
   //Do something here with home page
 
 
+
+
+
+});
+ 
+//And now we initialize app
+myApp.init();
+
+
 var serviceURL = "http://smilesavers.net.au/";
 
 var employees;
 
-getEmployeeList();
+$(window).load(function() {
+	setTimeout(getEmployeeList, 100);
+});
 
 $(document).ajaxError(function(event, request, settings) {
 	$('#busy').hide();
@@ -45,11 +56,6 @@ function getEmployeeList() {
 }
 
 
-
-});
- 
-//And now we initialize app
-myApp.init();
 
 // Add view
 var mainView = myApp.addView('.view-main', {
